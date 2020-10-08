@@ -3,7 +3,7 @@ module.exports = [{
       options: {"plugins":[],"pathToConfigModule":"/Users/adonisthegreat/Desktop/Development/appling-portfolio/node_modules/gatsby-theme-banshorian/src/utils/typography"},
     },{
       plugin: require('../node_modules/gatsby-plugin-manifest/gatsby-browser.js'),
-      options: {"plugins":[],"name":"Alando Appling CV","short_name":"AA","description":"This cool App contains information about my work experience as a software developer.","lang":"en","start_url":"/","background_color":"#000","theme_color":"#fff","display":"standalone","icon":"src/images/icon.png","icon_options":{"purpose":"any maskable"},"cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":null},
+      options: {"plugins":[],"name":"Alando Appling CV","short_name":"AA","description":"This cool App contains information about my work experience as a software developer.","lang":"en","start_url":"/","background_color":"#000","theme_color":"#fff","display":"standalone","icon":"src/images/icon.png","icon_options":{"purpose":"any maskable"},"cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"eb230720bafc8a7ccf5c0c7d067d76f9"},
     },{
       plugin: require('../node_modules/gatsby-plugin-transition-link/gatsby-browser.js'),
       options: {"plugins":[],"layout":"/Users/adonisthegreat/Desktop/Development/appling-portfolio/node_modules/gatsby-theme-banshorian/src/layout/index.js"},

@@ -119,7 +119,7 @@ const LayoutContactMe = ({ children, bgClassName }) => {
                             <p>Get in touch with me on</p>
                             <p>
                                 {Object.entries(social)
-                                    .filter(([_key, value]) => value != ``)
+                                    .filter(([_key, value]) => value !== ``)
                                     .map(([key, value]) => {
                                         const links = {
                                             gitHub: "https://github.com/",

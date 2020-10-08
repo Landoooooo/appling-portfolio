@@ -4,7 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@deckdeckgo/highlight-code": "^2.1.0",
     "gatsby": "^2.24.68",
+    "gatsby-remark-highlight-code": "^2.1.0",
+    "gatsby-remark-reading-time": "^1.1.0",
     "gatsby-theme-banshorian": "^2.1.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

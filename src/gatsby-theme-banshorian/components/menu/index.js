@@ -15,6 +15,7 @@ const Menu = ({
 }) => {
     const defaultLinks = {
         home: { title: "Home", color: "#000", url: "/" },
+        blog: { title: "Blog", color: "#000", url: "/blog" },
         experience: {
             title: "Experience",
             color: "#3a3d98",
