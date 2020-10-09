@@ -1,0 +1,13 @@
+---
+title: "Understanding JavaScript at a deeper level: Objects"
+image:
+description: "Testing"
+---
+
+In my own words Objects in programming are just an encapsulation of data that is related to a specific thing, like a person, place or object. They’re like nouns but with a little more information that are called properties and every single object has them.
+
+Object properties are very similar to variables, in fact they can be set and created in almost the same exact way as a normal variable. With that being said, a major difference between properties and variables is that properties can be deleted. Also, just because properties can be deleted doesn’t mean that they should because it may contain an important piece of data. With using Object Descriptors, you have the ability to lock specific property to prevent it from being deleted. That’s not the end of the capability of Object Descriptors either, you’re able set it to make that property enumerable or writable.
+
+Naturally we want to protect the things that are most important to us and if you have an entire Object that you want locked from deletion or view, it would definitely be a bit much to have to set each property with the permissions you want; that’s why you’re able to protect objects with various methods such as Object.preventExtensions, Object.seal, and Object.freeze. If this is your first time hearing about any of methods allow me to briefly explain them to you, Object.preventExtensions is just like the name states which is preventing extensions from being added to the Object. Object.seal builds upon the functionality of Object.preventExtensions and also stops the individual properties from being deleted. Lastly Object.freeze is the method you will most likely use most often. Object.freeze takes all of the features of its predecessors and adds the ability to completely stop all changes from being applied to that particular Object.
+
+If you’ve made it this far, thank you for reading!

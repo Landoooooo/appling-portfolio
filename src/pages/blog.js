@@ -1,22 +1,34 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React, { useState } from "react";
 import { graphql } from "gatsby";
 import Blogs from "../components/blogs";
+import Author from "../components/blogs/author";
+import Delay from "../gatsby-theme-banshorian/components/delay";
 import LayoutContactMe from "../gatsby-theme-banshorian/components/layout/layout-contact-me";
+import styled from "styled-components";
 
-const Blog = ({ data, transitionStatus }) => {
-  console.log(transitionStatus);
+const Container = styled.div`
+  padding-top: 5em;
+`;
+const Blog = ({ data, transitionStatus, showLoadingAnimation = true }) => {
+  const [loaded, setLoaded] = useState(false);
+  const handleLoad = () => setLoaded(true);
   return (
-    <LayoutContactMe>
-      <Helmet>
-        <title>Blog Posts</title>
-      </Helmet>
-      <Blogs
-        posts={data.allMarkdownRemark.edges}
-        transitionStatus={transitionStatus}
-        title="Blog Posts"
-        description="Some things I wrote."
-      />
+    <LayoutContactMe bgClassName="aboutme">
+      <Container>
+        <Delay
+          wait={500}
+          cb={handleLoad}
+          showLoadingAnimation={showLoadingAnimation}
+        >
+          <Author />
+          <Blogs
+            posts={data.allMarkdownRemark.edges}
+            transitionStatus={transitionStatus}
+            title="Blog Posts"
+            description="Some things I wrote."
+          />
+        </Delay>
+      </Container>
     </LayoutContactMe>
   );
 };

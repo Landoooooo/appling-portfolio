@@ -12,7 +12,12 @@ module.exports = {
         siteName: `Alando Appling CV`,
         siteShortName: `AA`,
         siteDescription: `This cool App contains information about my work experience as a software developer.`,
-        siteKeywords: `Software developer, Full Stack Developer`,
+        siteKeywords: [
+          `Software developer`,
+          `Full Stack Developer`,
+          `Alando Appling`,
+          `Developer Blog`,
+        ],
         useMozJpeg: true,
         menuLinks: [
           // title = Link text
