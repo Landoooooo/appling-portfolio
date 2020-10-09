@@ -60,32 +60,32 @@ exports.onCreatePage = ({ page, actions }, themeOptions) => {
   }
 };
 
-exports.onCreateNode = ({ node, getNode, actions }, themeOptions) => {
-  const { createNodeField } = actions;
-  let { basePath } = themeOptions;
-  basePath = organizeSlash(basePath);
-  if (
-    node.internal.type === `MarkdownRemark` &&
-    node.internal.fieldOwners.slug !== "gatsby-plugin-i18n"
-  ) {
-    const slug = createFilePath({
-      node,
-      getNode,
-      basePath: `pages`,
-    });
-    createNodeField({
-      node,
-      name: `slug`,
-      value: `${basePath}${slug}`,
-    });
-    // Adds Skills that you have on your own but hides them in work experience
-    createNodeField({
-      node,
-      name: `hideOnExperience`,
-      value: /\/_additionalSkills.*$/.test(node.fileAbsolutePath),
-    });
-  }
-};
+// exports.onCreateNode = ({ node, getNode, actions }, themeOptions) => {
+//   const { createNodeField } = actions;
+//   let { basePath } = themeOptions;
+//   basePath = organizeSlash(basePath);
+//   if (
+//     node.internal.type === `MarkdownRemark` &&
+//     node.internal.fieldOwners.slug !== "gatsby-plugin-i18n"
+//   ) {
+//     const slug = createFilePath({
+//       node,
+//       getNode,
+//       basePath: `pages`,
+//     });
+//     createNodeField({
+//       node,
+//       name: `slug`,
+//       value: `${basePath}${slug}`,
+//     });
+//     // Adds Skills that you have on your own but hides them in work experience
+//     createNodeField({
+//       node,
+//       name: `hideOnExperience`,
+//       value: /\/_additionalSkills.*$/.test(node.fileAbsolutePath),
+//     });
+//   }
+// };
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
