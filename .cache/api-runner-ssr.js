@@ -17,8 +17,8 @@ var plugins = [{
       plugin: require('/Users/adonisthegreat/Desktop/Development/appling-portfolio/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
       options: {"plugins":[],"exclude":["/experience/_additionalSkills"]},
     },{
-      plugin: require('/Users/adonisthegreat/Desktop/Development/appling-portfolio/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
-      options: {"plugins":[],"fonts":["source sans pro:400,700","roboto:400,700","noto sans:400, 700"],"display":"swap"},
+      plugin: require('/Users/adonisthegreat/Desktop/Development/appling-portfolio/node_modules/gatsby-plugin-typography/gatsby-ssr'),
+      options: {"plugins":[],"pathToConfigModule":"src/utils/typography","omitGoogleFont":true},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

@@ -86,14 +86,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-typography`,
       options: {
-        fonts: [
-          `source sans pro\:400,700`,
-          `roboto\:400,700`,
-          `noto sans\:400, 700`,
-        ],
-        display: "swap",
+        pathToConfigModule: "src/utils/typography",
+        omitGoogleFont: true,
       },
     },
   ],

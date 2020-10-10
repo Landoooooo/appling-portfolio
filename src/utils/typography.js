@@ -16,7 +16,7 @@ const typography = new Typography({
     "Roboto",
     "Helvetica Neue",
     "Arial",
-    "Noto Sans",
+    "Duru Sans",
     "sans-serif",
     "Apple Color Emoji",
     "Segoe UI Emoji",

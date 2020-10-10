@@ -13,4 +13,10 @@ module.exports = [{
     },{
       plugin: require('../node_modules/gatsby-plugin-nprogress/gatsby-browser.js'),
       options: {"plugins":[],"showSpinner":true},
+    },{
+      plugin: require('../node_modules/gatsby-plugin-typography/gatsby-browser.js'),
+      options: {"plugins":[],"pathToConfigModule":"src/utils/typography","omitGoogleFont":true},
+    },{
+      plugin: require('../gatsby-browser.js'),
+      options: {"plugins":[]},
     }]

@@ -1,1 +1,1 @@
-module.exports = require("/Users/adonisthegreat/Desktop/Development/appling-portfolio/node_modules/gatsby-theme-banshorian/src/utils/typography")
+module.exports = require("/Users/adonisthegreat/Desktop/Development/appling-portfolio/src/utils/typography")
