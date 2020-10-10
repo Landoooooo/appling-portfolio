@@ -17,6 +17,9 @@ module.exports = [{
       plugin: require('../node_modules/gatsby-plugin-typography/gatsby-browser.js'),
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography","omitGoogleFont":true},
     },{
+      plugin: require('../node_modules/gatsby-plugin-loadable-components-ssr/gatsby-browser.js'),
+      options: {"plugins":[],"useHydrate":true},
+    },{
       plugin: require('../gatsby-browser.js'),
       options: {"plugins":[]},
     }]

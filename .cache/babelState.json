@@ -7,6 +7,10 @@
           "options": {}
         },
         {
+          "name": "@loadable/babel-plugin",
+          "options": {}
+        },
+        {
           "name": "/Users/adonisthegreat/Desktop/Development/appling-portfolio/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
@@ -44,6 +48,10 @@
       "plugins": [
         {
           "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "@loadable/babel-plugin",
           "options": {}
         },
         {
@@ -87,6 +95,10 @@
           "options": {}
         },
         {
+          "name": "@loadable/babel-plugin",
+          "options": {}
+        },
+        {
           "name": "/Users/adonisthegreat/Desktop/Development/appling-portfolio/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
@@ -124,6 +136,10 @@
       "plugins": [
         {
           "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "@loadable/babel-plugin",
           "options": {}
         },
         {

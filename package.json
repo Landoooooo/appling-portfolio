@@ -23,5 +23,8 @@
     "typeface-roboto": "^1.1.13",
     "typeface-source-sans-pro": "^1.1.13"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@loadable/component": "^5.13.2",
+    "gatsby-plugin-loadable-components-ssr": "^2.1.0"
+  }
 }
